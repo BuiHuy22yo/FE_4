@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@font-body: 'Poppins', sans-serif;
+@color-while: #fff;
+@color-black: #000;
+@color-777: #777;
+@color-333: #333;
+@color-ececec: #ececec;
+@color-F3F3F3:#F3F3F3;
+@color-red: #dd2f31;
+@color-dddddd: #dddddd;
+@color-cccccc: #cccccc;
+@color-bgr-footer: #222222;
+@color-444444:#444444;
+@color-111111: #111111;
+
+.font_body_no_l-h(@__size,@__color,@__weight) {
+    font-size: @__size;
+    color: @__color;
+    font-weight: @__weight;
+    font-family: @font-body;
+}
+
+.font_body(@__size,@__line,@__color,@__weight) {
+    .font_body_no_l-h(@__size,@__color,@__weight);
+    line-height: @__line;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: @font-body;
+}
+
+.dblock {
+    display: block;
+}
+
+.dnone {
+     display: none;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-box;  
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.justify-content-space-between {
+    padding: 23px 0;
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none
+    }
+}
+
+.transition(@__transition) {
+    transition:@__transition;
+    -moz-transition: @__transition;
+    -webkit-transition: @__transition;
+    -o-transition: @__transition;
+}
+.transform(@__transform, @__transform) {
+    transform: translate(@__transform,  @__transform);
+    -moz-transform: translate(@__transform,  @__transform);
+    -webkit-transform: translate(@__transform,  @__transform);
+    -o-transform: translate(@__transform,  @__transform);
+}
+
+.transform-scale(@__transform) {
+    transform: scale(@__transform);
+    -moz-transform: scale(@__transform);
+    -webkit-transform: scale(@__transform);
+    -o-transform: scale(@__transform,);
+}
+.translateX(@__transform) {
+    transform: translateX(@__transform);
+    -moz-transform: translateX(@__transform);
+    -webkit-transform: translateX(@__transform);
+    -o-transform: translateX(@__transform,);
+}
+   
+@import '_header.less';
+@import '_slider.less'; 
+@import '_category-product.less';       
+@import '_product.less';  
+@import '_client-say.less'; 
+@import '_brand.less';
+@import '_footer.less';
+@import '_responsive.less';

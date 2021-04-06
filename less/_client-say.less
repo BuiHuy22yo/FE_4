@@ -1,0 +1,64 @@
+
+//client-say
+.client-say {
+    .container {
+        max-width: 1170px;
+    }
+
+    &__item {
+        width: 67%;
+        margin: auto;
+        .text-xl {
+            .font_body(36px,30px,@color-black,700);           
+            text-transform: capitalize;    
+            padding-bottom: 32px;  
+        }
+
+        .images {  
+                 width: 80px;
+                height: 80px;
+                border-radius: 40px;
+                margin:  24px auto;
+
+            img {
+                border-radius: 40px;
+                width: 100%;
+                background-color: @color-black;
+            }
+        }
+
+        .text {
+            .font_body(18px,30px,@color-777,400);
+            padding-bottom: 24px;
+        }
+
+        .name {
+            text-transform: uppercase;
+            .font_body(18px,30px,@color-black,700);;
+        }
+
+        .text-bottom {
+            .font_body(14px,30px,@color-777,400);    
+            letter-spacing: 0.7px;          
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.owl-carousel .owl-dots.disabled {
+    display: block;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color:@color-red;
+} 
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.owl-carousel.owl-loaded {
+    padding: 92px 0 90px 0;
+}
+//client-say

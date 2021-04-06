@@ -1,0 +1,99 @@
+/*product*/
+.product {
+    &__tab-bar {    
+        padding: 20px 0px 16px 0px;
+        a {    
+            .font_body(18px,24px,#000018,700); 
+            padding: 15px 16px; 
+            text-transform: uppercase;  
+        }
+
+        a:hover {
+            color: @color-red;
+            border-bottom: 2px solid @color-red;
+        }        
+    }
+
+    &__line {
+        margin: 0 auto;
+
+        &__line {
+            border-top: 1px solid @color-dddddd;
+        }
+     }
+    &__item {
+        padding: 0 15px;
+        margin-top: 40px ;
+        margin-bottom: 8px;
+
+        .inner {
+            background-color: #ffffff;
+            padding-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .item {
+            .images {
+                    overflow: hidden;
+                    img {
+                    width: 100%;    
+                }    
+            } 
+
+            .btn {
+                position: absolute;
+                opacity: 0;
+                top: 19px;
+                right: 18px;
+                z-index: 2;
+                padding: 0;
+                ul { 
+                    li {
+                        margin-bottom: 19px;
+                        a {
+                            padding: 10px;
+                            .font_body(14px,30px,@color-777,400); 
+                            border-radius: 5px 0px 5px 0px;
+                            background-color: rgba(221,47,49,0);
+                            border: 1px solid @color-dddddd;
+                            font-family: 'Font Awesome 5 Free';
+                            text-align: center;    
+                        }
+                        a:hover {
+                            background-color:@color-red; 
+                            color:  @color-while;   
+                        }
+                    }
+                }
+            }
+        }
+
+        .name-price {
+            padding: 22px 30px;
+            .name {
+                .font_body(14px,24px,@color-black,400); 
+                text-transform: capitalize;
+            }
+            .price {
+                .font_body(14px,24px,@color-black,700);   
+            }            
+        }
+    }  
+
+    &__item:hover .btn {
+        opacity: 1;
+        .transition(0.2s);
+        
+    }
+
+    &__item:hover img {
+       .transform-scale(1.1);
+       .transition(0.2s);
+       
+    }
+    
+    &__item:hover {
+        filter: drop-shadow(0 0 2.5px rgba(0,0,0,0.2));
+    }
+}

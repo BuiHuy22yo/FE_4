@@ -1,0 +1,46 @@
+/*SLIDER*/
+.slider {
+    &__content {
+        width: 100%;
+        max-width: 1170px;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        z-index: 2;
+        .transform(-50%, -50%);
+        &__inner {
+            width: 46%;
+     
+            .text-xl {
+                text-transform:capitalize;
+                .font_body_no_l-h(60px,@color-while,700);
+                margin-left: -4px;
+            }
+
+            .text-lg {
+                .font_body_no_l-h(40px,@color-while,700);
+                margin-top: -10px;
+                margin-left: -4px;
+            } 
+            
+            .text {  
+                .font_body(14px,24px,@color-while,400);   
+                margin-left: -1px;   
+                margin-top:21px ;                    
+            }
+
+            .btn-link { 
+                margin-top: 67px;  
+                background-color: rgba(221,47,49,0);          
+                a {
+                    .font_body(14px,24px,@color-while,400);
+                    text-transform:uppercase;       
+                    text-align: center;
+                    border: 1px solid @color-while;
+                    padding:14px 46px;
+                }   
+            } 
+        }
+    }             
+} 
+// start_slider

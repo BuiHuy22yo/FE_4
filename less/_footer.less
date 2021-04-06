@@ -1,0 +1,76 @@
+/*footer*/
+.footer {
+    background-color: @color-bgr-footer;
+    &__top {
+        width: 65%;
+        margin: 0 auto;
+        padding: 50px 0;
+        .logo {
+            padding-top: 50px;
+            padding-bottom: 33px;
+        }
+
+        .text-footer {
+            padding-bottom: 20px;           
+            p {
+                .font_body(14px,24px,@color-777,400);
+                
+            }
+        }
+
+        .social {
+            .social-item {
+                a {
+                    padding: 0px 21px ;
+                    .font_body(18px,30px,@color-777,400); 
+                    font-family: 'Font Awesome 5 Brands';
+                }
+                .fb {
+                    padding-left: 30px;
+                    padding-right: 11px
+                }
+                .twi {
+                    margin-left: 17px;
+                }   
+            }
+        }
+    } 
+
+    &__line {
+        &__line {
+            border-top: 1px solid  @color-444444;       
+        }
+    }           
+   
+    &__item {  
+        margin: 38px 0;    
+        .title{
+            .font_body(18px,30px,@color-while,700);
+            text-transform: uppercase;
+            margin: 33px 0 16px 0;
+        }
+
+        .list {
+            ul {
+                li {    
+                    a {    
+                        .font_body(14px,40px,@color-777,400); 
+                        i {
+                            padding-right: 14px;
+                        }         
+                    } 
+                    a:hover {
+                        border-bottom:1px solid @color-777 ;
+                    }  
+                }
+            }
+        }  
+    }
+    
+    &__bottom {
+        padding: 10px 0;
+        .font_body(14px,30px,@color-777,400);
+        background-color:@color-111111 ;   
+    }
+}
+/*footer*/
